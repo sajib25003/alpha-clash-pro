@@ -78,18 +78,20 @@
 
             <!-- life & score -->
             <div class="flex justify-between  w-2/3 pb-8">
-                <button class="btn bg-[#894189] text-white">Life <i class="fa-solid fa-heart-circle-plus" style="color: #ffffff;"></i>  1</button>
-                <button class="btn bg-[#360490] text-white">Score <i class="fa-solid fa-circle-dollar-to-slot" style="color: #ffffff;"></i> 1</button>
+                <!-- Life Count -->
+                <button class="btn bg-[#894189] text-white">Life <i class="fa-solid fa-heart-circle-plus" style="color: #ffffff;"></i>  <span id="current-life">5</span></button>
+                <!-- Score Count -->
+                <button class="btn bg-[#360490] text-white">Score <i class="fa-solid fa-circle-dollar-to-slot" style="color: #ffffff;"></i> <span id="current-score">0</span></button>
             </div>
 
         </section>
         <!-- final score section -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="game-over" class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white bg-[#ffffff8f] p-8 text-center space-y-4 rounded-lg">
-                
+                <h3 class="text-5xl">GAME OVER!!!</h3>
                 <h1 class="text-8xl"><span class="font-extrabold">Score : </span>
-                <span class="">14</span></h1>
-                <button class="bg-white text-black font-poppins font-semibold text-2xl p-3 rounded-lg">Play Again</button>
+                <span id="final-score">14</span></h1>
+                <button onclick="play()" class="bg-white text-black font-poppins font-semibold text-2xl p-3 rounded-lg">Play Again</button>
                 <p>Practice will make you Pro...</p>
             </div>
         </section>
